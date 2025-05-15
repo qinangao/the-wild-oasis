@@ -16,7 +16,9 @@ function Cabins() {
       <Row type="vertical">
         <CabinTable />
 
-        <Button onClick={() => setShowForm(!showForm)}>Add new cabin</Button>
+        <Button onClick={() => setShowForm((show) => !show)}>
+          Add new cabin
+        </Button>
         {showForm && <CreateCabinForm />}
       </Row>
     </>
