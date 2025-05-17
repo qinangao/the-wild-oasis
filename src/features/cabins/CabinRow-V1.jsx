@@ -9,7 +9,6 @@ import { useCreateCabin } from "./useCreateCabin";
 import { HiMiniSquare2Stack, HiMiniPencil, HiTrash } from "react-icons/hi2";
 import Modal from "../../ui/Modal";
 import Table from "../../ui/Table";
-import MenuList from "../../ui/MenuList";
 
 // const TableRow = styled.div`
 //   display: grid;
@@ -52,7 +51,7 @@ const Discount = styled.div`
 
 function CabinRow({ cabin }) {
   const { isDeleting, deleteCabin } = useDeleteCabin();
-  const { createCabin } = useCreateCabin();
+  const { isCreating, createCabin } = useCreateCabin();
 
   const {
     id: cabinId,
@@ -87,31 +86,24 @@ function CabinRow({ cabin }) {
         <span>&mdash;</span>
       )}
       <div>
+        <button disabled={isCreating} onClick={handleDuplicate}>
+          <HiMiniSquare2Stack />
+        </button>
         <Modal>
-          <MenuList.Menu>
-            <MenuList.Toggle id={cabinId} />
-            <MenuList.List id={cabinId}>
-              <MenuList.Button
-                icon={<HiMiniSquare2Stack />}
-                onClick={handleDuplicate}
-              >
-                Duplicate
-              </MenuList.Button>
-
-              <Modal.Open opens="update">
-                <MenuList.Button icon={<HiMiniPencil />}>Edit</MenuList.Button>
-              </Modal.Open>
-
-              <Modal.Open opens="delete">
-                <MenuList.Button icon={<HiTrash />}>Delete</MenuList.Button>
-              </Modal.Open>
-            </MenuList.List>
-          </MenuList.Menu>
-
+          <Modal.Open opens="update">
+            <button>
+              <HiMiniPencil />
+            </button>
+          </Modal.Open>
           <Modal.Window name="update">
             <CreateCabinForm cabinToEdit={cabin} />
           </Modal.Window>
 
+          <Modal.Open opens="delete">
+            <button disabled={isDeleting}>
+              <HiTrash />
+            </button>
+          </Modal.Open>
           <Modal.Window name="delete">
             <ConfirmDelete
               resourceName="cabin"
