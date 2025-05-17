@@ -76,7 +76,7 @@ function Open({ children, opens: opensWindowName }) {
 
 function Window({ children, name }) {
   const { openName, close } = useContext(ModalContext);
-  const { ref } = useOverlayClick(close);
+  const ref = useOverlayClick(close);
 
   // const ref = useRef();
 

@@ -11,5 +11,5 @@ export function useOverlayClick(handler) {
     return () => document.removeEventListener("click", handleClick, true);
   }, [handler]);
 
-  return { ref };
+  return ref;
 }
