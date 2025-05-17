@@ -1,10 +1,10 @@
 import { createContext, useContext, useState } from "react";
-import { createPortal } from "react-dom";
 import { HiEllipsisVertical } from "react-icons/hi2";
 import styled from "styled-components";
 import { useOverlayClick } from "../hooks/useOverlayClick";
 
 const Menu = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -30,7 +30,8 @@ const StyledToggle = styled.button`
 `;
 
 const StyledList = styled.ul`
-  position: fixed;
+  position: absolute;
+  z-index: 1;
 
   background-color: var(--color-grey-0);
   box-shadow: var(--shadow-md);
@@ -82,12 +83,15 @@ function MenuList({ children }) {
 
 function Toggle({ id }) {
   const { openId, close, open, setPostion } = useContext(MenuListContext);
+
   function handleClick(e) {
+    e.stopPropagation();
+
     const rect = e.target.closest("button").getBoundingClientRect();
 
     setPostion({
-      x: window.innerWidth - rect.width - rect.x,
-      y: rect.y + rect.height + 8,
+      x: rect.width,
+      y: rect.height,
     });
 
     openId === "" || openId !== id ? open(id) : close();
@@ -101,15 +105,18 @@ function Toggle({ id }) {
 
 function List({ id, children }) {
   const { openId, position, close } = useContext(MenuListContext);
-  const ref = useOverlayClick(close);
+  // const ref = useOverlayClick(close, false);
+
+  const ref = useOverlayClick(() => {
+    close();
+  }, false);
 
   if (openId !== id) return null;
 
-  return createPortal(
+  return (
     <StyledList $position={position} ref={ref}>
       {children}
-    </StyledList>,
-    document.body
+    </StyledList>
   );
 }
 
