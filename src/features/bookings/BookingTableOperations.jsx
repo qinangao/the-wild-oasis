@@ -17,13 +17,10 @@ function BookingTableOperations() {
 
       <SortBy
         options={[
-          { value: "startDate-desc", label: "Sort by date (new-old)" },
-          { value: "startDate-asc", label: "Sort by date (old-new)" },
-          {
-            value: "totalPrice-desc",
-            label: "Sort by amount (high first)",
-          },
-          { value: "totalPrice-asc", label: "Sort by amount (low first)" },
+          { value: "startDate-desc", label: "Newest to oldest date" },
+          { value: "startDate-asc", label: "Oldest to newest date" },
+          { value: "totalPrice-desc", label: "Highest price first" },
+          { value: "totalPrice-asc", label: "Lowest price first" },
         ]}
       />
     </TableOperations>
