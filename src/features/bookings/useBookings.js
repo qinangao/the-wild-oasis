@@ -14,13 +14,18 @@ export function useBookings() {
           value: filteredValue,
           method: "eq",
         };
+  //Sort:
+  const sortByRaw = searchParams.get("sortBy") || "startDate-desc";
+  const [field, direction] = sortByRaw.split("-");
+  const sortBy = { field, direction };
+
   const {
     isPending,
     data: bookings,
     error,
   } = useQuery({
-    queryKey: ["bookings", filter],
-    queryFn: () => getAllBookings({ filter }),
+    queryKey: ["bookings", filter, sortBy],
+    queryFn: () => getAllBookings({ filter, sortBy }),
   });
   return { isPending, bookings, error };
 }
