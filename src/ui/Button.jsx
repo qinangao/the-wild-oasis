@@ -59,6 +59,11 @@ const Button = styled.button.attrs((props) => ({
 
   ${(props) => sizes[props.$size]}
   ${(props) => variations[props.$variation]}
+
+  &:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
 `;
 
 export default Button;
