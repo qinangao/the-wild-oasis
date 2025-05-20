@@ -49,10 +49,10 @@ const StyledButton = styled.button`
   padding: 1.2rem 2.4rem;
   font-size: 1.4rem;
   transition: all 0.2s;
-
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  white-space: nowrap;
 
   &:hover {
     background-color: var(--color-grey-50);
