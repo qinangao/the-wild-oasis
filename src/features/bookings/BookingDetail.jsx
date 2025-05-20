@@ -11,6 +11,8 @@ import ButtonText from "../../ui/ButtonText";
 import { useMoveBack } from "../../hooks/useMoveBack";
 import { useBookingDetails } from "./useBookingDetail";
 import Spinner from "../../ui/Spinner";
+import { useNavigate } from "react-router-dom";
+import { HiArrowDownOnSquare } from "react-icons/hi2";
 
 const HeadingGroup = styled.div`
   display: flex;
@@ -22,6 +24,7 @@ function BookingDetail() {
   const { isPending, details } = useBookingDetails();
 
   const moveBack = useMoveBack();
+  const navigate = useNavigate();
 
   if (isPending) return <Spinner />;
 
@@ -46,6 +49,11 @@ function BookingDetail() {
       <BookingDataBox booking={details} />
 
       <ButtonGroup>
+        {status === "unconfirmed" && (
+          <Button onClick={() => navigate(`/checkin/${bookingId}`)}>
+            Check in
+          </Button>
+        )}
         <Button $variation="secondary" onClick={moveBack}>
           Back
         </Button>
