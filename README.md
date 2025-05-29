@@ -1,12 +1,11 @@
-# React + Vite
+# 🏝️ The Wild Oasis – Hotel Management Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+(Built as part of “The Ultimate React Course” by Jonas Schmedtmann)
 
-Currently, two official plugins are available:
+Welcome to the documentation for The Wild Oasis, a user-friendly hotel management application designed to streamline everyday operations in a boutique hotel environment. This comprehensive system covers everything from booking management and guest records to real-time statistics and customisable application settings.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🎮 Demo Account
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Use the following credentials to explore the application:
+Email Address: test@test.com  
+Password: 12345678
