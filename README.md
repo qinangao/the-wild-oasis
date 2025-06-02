@@ -31,7 +31,7 @@ Welcome to **The Wild Oasis**, a modern hotel management application designed to
 # 🌐 Live Demo
 
 Check out the live site here:  
-[https://the-wild-oasis-qinang.netlify.app/dashboard](https://the-wild-oasis-qinang.netlify.app/dashboard)
+[https://the-wild-oasis-qinangao.netlify.app](https://the-wild-oasis-qinangao.netlify.app)
 
 ---
 
