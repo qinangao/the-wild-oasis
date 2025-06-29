@@ -92,7 +92,3 @@ Dark Mode
 - [Jonas Schmedtmann](https://codingheroes.io/) for the course and inspiration.
 - [Supabase](https://supabase.com/) for the backend platform.
 - [React](https://react.dev/) for the frontend framework.
-
----
-
-Thank you for choosing The Wild Oasis! We hope you enjoy using our application as much as we enjoyed building it.
