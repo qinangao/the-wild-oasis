@@ -16,6 +16,7 @@ Welcome to **The Wild Oasis**, a modern hotel management application designed to
 - **Settings:** Customise application preferences to suit your needs.
 - **Authentication:** Secure login for staff members.
 - **Responsive Design:** Works seamlessly on desktop and mobile devices.
+- **Dark Mode:** Enjoy a visually comfortable experience day or night with a built-in dark theme.
 
 ---
 
@@ -44,6 +45,29 @@ Use the following credentials to explore the application:
 
 ---
 
+## 🖥️ Demonstration
+
+Home page
+![Dashboard Screenshot](assets/Home.PNG)
+
+Bookings
+![Dashboard Screenshot](assets/Booking.PNG)
+
+Cabins
+![Dashboard Screenshot](assets/Cabins.PNG)
+
+User
+![Dashboard Screenshot](assets/User.PNG)
+
+Setting
+![Dashboard Screenshot](assets/Setting.PNG)
+
+Account
+![Dashboard Screenshot](assets/Account.PNG)
+
+Dark Mode
+![Dashboard Screenshot](assets/Darkmode.PNG)
+
 ## 🛠️ Getting Started
 
 1. **Clone the repository:**
@@ -63,40 +87,6 @@ Use the following credentials to explore the application:
 
 ---
 
-## 📁 Project Structure
-
-```
-src/
-  features/         # Main app features (bookings, cabins, etc.)
-  ui/               # Reusable UI components
-  data/             # Static data and upload scripts
-  services/         # API and Supabase logic
-  hooks/            # Custom React hooks
-  context/          # Context providers (e.g., dark mode)
-  styles/           # Global styles
-  utils/            # Utility functions and constants
-```
-
----
-
-## 📚 Documentation
-
-For detailed documentation on how to use the application, please refer to the [Wiki](https://github.com/your-username/the-wild-oasis/wiki).
-
----
-
-## 🤝 Contributing
-
-We welcome contributions to The Wild Oasis! Please read our [Contributing Guide](https://github.com/your-username/the-wild-oasis/blob/main/CONTRIBUTING.md) for more information.
-
----
-
-## 📧 Contact
-
-For any inquiries or support, please contact us at [support@thewildoasis.com](mailto:support@thewildoasis.com).
-
----
-
 ## 🙏 Acknowledgements
 
 - [Jonas Schmedtmann](https://codingheroes.io/) for the course and inspiration.
@@ -106,3 +96,7 @@ For any inquiries or support, please contact us at [support@thewildoasis.com](ma
 ---
 
 Thank you for choosing The Wild Oasis! We hope you enjoy using our application as much as we enjoyed building it.
+
+```
+
+```
