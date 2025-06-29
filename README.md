@@ -96,7 +96,3 @@ Dark Mode
 ---
 
 Thank you for choosing The Wild Oasis! We hope you enjoy using our application as much as we enjoyed building it.
-
-```
-
-```
