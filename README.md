@@ -6,17 +6,14 @@ Welcome to **The Wild Oasis**, a modern hotel management application designed to
 
 ---
 
-## 🚀 Features
+🚀 Features
 
-- **Booking Management:** Create, edit, and track guest bookings with ease.
-- **Cabin Inventory:** Manage cabin details, pricing, and availability.
-- **Guest Records:** Store and update guest information securely.
-- **Check-In/Check-Out:** Simplified workflows for daily operations.
-- **Dashboard:** Real-time statistics and insights for smarter decisions.
-- **Settings:** Customise application preferences to suit your needs.
-- **Authentication:** Secure login for staff members.
-- **Responsive Design:** Works seamlessly on desktop and mobile devices.
-- **Dark Mode:** Enjoy a visually comfortable experience day or night with a built-in dark theme.
+- **Authentication:** Secure login for hotel staff with account creation restricted to the app. Users can upload avatars and update personal info.
+- **Dashboard:** Real-time overview of bookings, check-ins, check-outs, sales, and occupancy with visual stats and quick actions.
+- **Booking Management:** View, filter, and manage bookings including dates, status, payment, guest details, and breakfast options.
+- **Cabin Inventory:** Manage cabins with photos, capacity, pricing, discounts, and full create, update, delete functionality.
+- **Guest Records:** Store guest details like full name, email, national ID, nationality, and display country flags for easy ID.
+- **Dark Mode:** Built-in dark theme for comfortable use anytime.
 
 ---
 
